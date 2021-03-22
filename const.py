@@ -1,6 +1,6 @@
 
 FIELDS = [
-    ['Cod_setor', 'Nome_da_UF', 'Cod_micro', 'Nome_da_micro'],
+    ['Cod_setor', 'Cod_micro', 'Nome_da_micro'],
 
     ['Cod_setor'] + ['V' + str(n).zfill(3) for n in range(1, 6)] + 
     ['V' + str(n).zfill(3) for n in range(50, 60)],
