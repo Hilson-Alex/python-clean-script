@@ -19,8 +19,8 @@ FIELDS = [
 
 SAVE_NAMES = [
         'basico_clean.csv',
-        'domicilio1_clean.csv',
-        'domicilio2_clean.csv',
+        'domicilio_clean.csv',
+        'residentes_clean.csv',
         'pessoa11_clean.csv',
         'pessoa12_clean.csv',
         'pessoaRenda_clean.csv'
