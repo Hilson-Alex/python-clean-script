@@ -5,7 +5,7 @@ FIELDS = [
     ['Cod_setor'] + ['V' + str(n).zfill(3) for n in range(1, 6)] + 
     ['V' + str(n).zfill(3) for n in range(50, 60)],
 
-    ['Cod_setor'] + ['V' + str(n).zfill(3) for n in range(3, 6)],
+    ['Cod_setor', 'V001'] + ['V' + str(n).zfill(3) for n in range(3, 6)],
 
     ['Cod_setor', 'V001', 'V019', 'V021', 'V022'] + 
     ['V' + str(n).zfill(3) for n in range(35, 135)],
@@ -36,3 +36,4 @@ def get_archive_names(uf):
         'Pessoa12_' + uf + '.csv',
         'PessoaRenda_' + uf + '.csv'
     ]
+

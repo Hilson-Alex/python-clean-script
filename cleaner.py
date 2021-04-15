@@ -17,7 +17,19 @@ def sidra_clean (cnaes, cities):
 
 
 def divide_income (man, woman, income):
-    income_man = income[FIELDS[5][0:11]]
-    income_woman = income[[FIELDS[5][0]] + FIELDS[5][11:]]
+    columns = FIELDS[5]
+    income_man = income[columns[0:11]]
+    income_woman = income[[columns[0]] + columns[11:]]
+    arr = []
+    for income in [income_man, income_woman]:
+        columns = income.columns
+        income.loc[:,'Classe E'] = income[columns[1]] + income[columns[2]] + income[columns[3]] 
+        + income[columns[10]]
+        income.loc[:,'Classe D'] = income[columns[4]] + income[columns[5]]
+        income.loc[:,'Classe C'] = income[columns[6]]
+        income.loc[:,'Classe B'] = income[columns[7]] + income[columns[8]]
+        income.loc[:,'Classe A'] = income[columns[9]]
+        arr.append(income.drop(columns=columns[1:11]))
+    
     return [sex.merge(inc, how='outer', on='Cod_setor', suffixes=('','_renda')) 
-            for sex, inc in zip([man, woman], [income_man, income_woman])]
+            for sex, inc in zip([man, woman], arr)]
