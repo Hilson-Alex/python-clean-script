@@ -48,6 +48,7 @@ for uf in ufs:
 
     for arch, name in zip(midtables[1:], SAVE_NAMES[1:-1]):
         aggregate(midtables[0], arch, FIELDS[0][1], FIELDS[0][:2]).to_csv(path + name, index=False)
+
     midtables[0] = midtables[0].drop(columns=FIELDS[0][0]).groupby(FIELDS[0][1], as_index=False).max()
     midtables[0].to_csv(path + SAVE_NAMES[0], index=False)
 
