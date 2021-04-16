@@ -1,5 +1,7 @@
 # python-clean-script
 
+Read this in [english](/README.en.md)
+
 This is a python script for cleaning IBGE census tables for an simulation of Brazil local population and how an epidemy would spread in certain brazilian regions.
 
 IBGE is a brazilian Institute that collect and provide data about Brazil regions (states, cities, etc...) and brazilian people for estatistics purposes, 
