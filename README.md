@@ -1,6 +1,6 @@
 # python-clean-script
 
-You're not a portuguese speaker? Read this in [english](/README.en.md)
+Are you not a portuguese speaker? Read this in [english](/README.en.md)
 
 Este é um script em python para limpeza das tabelas do censo de 2010 do IBGE (Instituto Brasileiro de Geografia Estatística) para uma simulação da população brasileira e como uma epidemia se espalharia em microrregiões das terras tupiniquins.
 
