@@ -47,5 +47,5 @@ python path/to/python-clean-script/index.py path/to/resources/
 And the script will clean the tables.
 
 ## Authors
-Gabriel Assunção de Souza: [@Souza-gabriel](https://github.com/Souza-gabriel)
-Hilson A. W. Jr.: [@Hilson-Alex](https://github.com/Hilson-Alex)
+- Gabriel Assunção de Souza: [@Souza-gabriel](https://github.com/Souza-gabriel)
+- Hilson A. W. Jr.: [@Hilson-Alex](https://github.com/Hilson-Alex)
