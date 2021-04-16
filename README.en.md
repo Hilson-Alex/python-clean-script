@@ -2,13 +2,17 @@
 
 Read this in [portuguese](/README.md)
 
-This is a python script for cleaning IBGE census tables for an simulation of Brazil local population and how an epidemy would spread in certain brazilian regions.
+This is a python script for cleaning IBGE (Brazilian Institute of Statistical Geography) 2010 census tables for an simulation of Brazil local population and how an epidemy would spread in certain brazilian regions.
 
 IBGE is a brazilian Institute that collect and provide data about Brazil regions (states, cities, etc...) and brazilian people for estatistics purposes, 
 and we hope to use this data to create intelligent agents to simulate a local population during an epidemy.
 
+> To be as clear as possible, these are public data and there's not a single sensible data in these tables.
+> The tables, except the enterprises table table can be found [here](https://www.ibge.gov.br/estatisticas/sociais/populacao/9662-censo-demografico-2010.html?edicao=10410&t=resultados)
+> The enterprises table can be found [here](https://sidra.ibge.gov.br/Tabela/993)
+
 This code is **not** useful for other repositories, it's made especifically for our project, but We'll let then public for transparency purposes, keeping in mind that
-this research was paid with public money, and so, we think that the results may be public too.
+this research was paid with public money, and so, we think that the results may be public as well.
 
 ## Getting Started
 
@@ -37,7 +41,7 @@ resources
 │   └───UF
 ```
 
-Inside the dirty folder you can have one or more UF folder with the brazilan states UF as a name and the IBGE census tables inside it. 
+Inside the dirty folder you can have one or more UF folder with the brazilan states UF as a name and the IBGE census tables inside it in CSV format. 
 You'll also need an [Sidra Table](https://sidra.ibge.gov.br/Tabela/993) in the dirty directory without the documentation in the final of the file and without
 the headers on the beggining
 
