@@ -1,6 +1,6 @@
 # python-clean-script
 
-Read this in [portuguese](/README.md)
+Are you a brazilian? Read this in [portuguese](/README.md)
 
 This is a python script for cleaning IBGE (Brazilian Institute of Statistical Geography) 2010 census tables for an simulation of Brazil local population and how an epidemy would spread in certain brazilian regions.
 
