@@ -7,8 +7,8 @@ This is a python script for cleaning IBGE (Brazilian Institute of Statistical Ge
 IBGE is a brazilian Institute that collect and provide data about Brazil regions (states, cities, etc...) and brazilian people for estatistics purposes, 
 and we hope to use this data to create intelligent agents to simulate a local population during an epidemy.
 
-> To be as clear as possible, these are public data and there's not a single sensible data in these tables.
-> The tables, except the enterprises table table can be found [here](https://www.ibge.gov.br/estatisticas/sociais/populacao/9662-censo-demografico-2010.html?edicao=10410&t=resultados)
+> To be as clear as possible, these are public data and there's not a single sensitive data in these tables.
+> The IBGEs tables can be found [here](https://www.ibge.gov.br/estatisticas/sociais/populacao/9662-censo-demografico-2010.html?edicao=10410&t=resultados)
 > The enterprises table can be found [here](https://sidra.ibge.gov.br/Tabela/993)
 
 This code is **not** useful for other repositories, it's made especifically for our project, but We'll let then public for transparency purposes, keeping in mind that
