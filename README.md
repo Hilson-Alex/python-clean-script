@@ -1,35 +1,36 @@
 # python-clean-script
 
-Read this in [english](/README.en.md)
+You're not a portuguese speaker? Read this in [english](/README.en.md)
 
-This is a python script for cleaning IBGE census tables for an simulation of Brazil local population and how an epidemy would spread in certain brazilian regions.
+Este é um script em python para limpeza das tabelas do censo de 2010 do IBGE (Instituto Brasileiro de Geografia Estatística) para uma simulação da população brasileira e como uma epidemia se espalharia em microrregiões das terras tupiniquins.
 
-IBGE is a brazilian Institute that collect and provide data about Brazil regions (states, cities, etc...) and brazilian people for estatistics purposes, 
-and we hope to use this data to create intelligent agents to simulate a local population during an epidemy.
+O IBGE coleta e fornece dados tanto sobre regiões brasileiras (bairros, cidades, microrregiões, estados, etc...) quanto sobre o povo brasileiro para estúdos estatísticos, e esperamos usar estes dados para criar agentes inteligentes capazes de simular a população local durante uma epidemia.
 
-This code is **not** useful for other repositories, it's made especifically for our project, but We'll let then public for transparency purposes, keeping in mind that
-this research was paid with public money, and so, we think that the results may be public too.
+> Para deixar o mais claro possível: Estes dados são **públicos** e não há dados sensíveis nestas tabelas.
+> As tabelas, exceto a de CNAEs podem ser encontradas [aqui](https://www.ibge.gov.br/estatisticas/sociais/populacao/9662-censo-demografico-2010.html?edicao=10410&t=resultados)
+> A tabela de CNAEs pode ser encontrada [aqui](https://sidra.ibge.gov.br/Tabela/993)
 
-## Getting Started
+Este algoritmo, muito provavelmente **não** é útil para outros repositórios que não seja o nosso, foi feito especificamente para o nosso projeto, mas o deixaremos público para manter a pesquisa o mais transparente possível, visto que ele foi completamente pago com dinheiro público, então concordamos que seus resultados devem ser públicos também.
 
-As told before, this is a small part of a bigger project, and is an extremely especific repository, but, if you want to get it running in your machine for some reason
-just follow this steps.
+## Modo de uso
 
-### Prerequisites
+Como dito anteriormente, este algoritmo é uma pequena parte de um projeto maior, o que o torna um repositório extremamente específico. Mas, se você pretende rodá-lo em seu computador por alguma razão, siga estes passos:
 
-The only prerequisite for this project is the Pandas library, that we used to handle csv data. To install it, just run the code bellow in the terminal:
+### Pré-requisitos
+
+O único pré-requisito é a biblioteca pandas que usamos para manipulação de arquivos CSV. Para baixá-la, apenas rode o comando abaixo no terminal:
 
 ```bash
 pip install pandas
 ```
 
-### Instalation
+### Instalação
 
-To have a copy of this script running you just need to clone it in your computer using ```git clone``` or ```git submodule add```.
+Para ter uma cópia deste projeto, apenas clone-o em seu computador usando ```git clone``` ou ```git submodule add``` para colocá-lo como um submódulo em seu repositório.
 
-### Running
+### Rodando
 
-To use this you must have an folder for resources, and inside this folder, a folder "dirty"  with the IBGE Tables. The directory must look like this:
+Para usar este script, você deve ter uma pasta para arquivos externos (resources), e dentro desta pasta, uma pasta com nome "dirty" com as tabelas do IBGE. O diretório de se parecer com isso:
 
 ```bash
 resources
@@ -37,17 +38,16 @@ resources
 │   └───UF
 ```
 
-Inside the dirty folder you can have one or more UF folder with the brazilan states UF as a name and the IBGE census tables inside it. 
-You'll also need an [Sidra Table](https://sidra.ibge.gov.br/Tabela/993) in the dirty directory without the documentation in the final of the file and without
-the headers on the beggining
+Dentro da pasta "dirty", você pode ter pastas de um ou mais estados com o nome da UF do estado (SC, RS, MG, etc..) e com as tabelas do censo no formato CSV dentro destas pastas. 
+Também é necessária uma [Tabela Sidra](https://sidra.ibge.gov.br/Tabela/993) no diretório "dirty" sem a documentação no final do arquivo nem com os headers no começo.
 
-After this, you just run :
+Tendo estes arquivos, apenas rode:
 ```bash
-python path/to/python-clean-script/index.py path/to/resources/
+python caminho/para/python-clean-script/index.py caminho/para/resources/
 ```
 
-And the script will clean the tables.
+E o algoritmo limpará as tabelas.
 
-## Authors
+## Authores
 - Gabriel Assunção de Souza: [@Souza-gabriel](https://github.com/Souza-gabriel)
 - Hilson A. W. Jr.: [@Hilson-Alex](https://github.com/Hilson-Alex)
