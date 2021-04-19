@@ -7,6 +7,8 @@ from cleaner import aggregate, sidra_clean, divide_income
 res_path = 'resources/'
 if (len(sys.argv) > 1 ):
     res_path = sys.argv[1]
+    if not (res_path.endswith('/') or res_path.endswith('\\')):
+        res_path += '/'
 
 dirty_path = res_path + 'dirty/'
 
