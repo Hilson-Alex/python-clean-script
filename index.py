@@ -22,7 +22,7 @@ for uf in ufs:
     
     # declaração de variáveis
     dirty_uf_path = dirty_path + uf + '/'
-    path = 'resources/' + uf + '/'
+    path = res_path + uf + '/'
     archs = get_archive_names(uf)
 
     if not os.path.isdir(path):
