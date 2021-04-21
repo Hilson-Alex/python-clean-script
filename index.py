@@ -43,8 +43,6 @@ for uf in ufs:
 
     midtables = [pd.read_csv(dirty_uf_path + table) for table in SAVE_NAMES]
 
-    print(midtables[1])
-
     # composição de campos e mescla de tabelas
     midtables[1].loc[:,'qtd_dom_coletivo'] = [tot - priv for tot, priv in zip(midtables[1]['V001'], midtables[1]['V002'])]
     midtables[3], midtables[4] = divide_income(midtables[3], midtables[4], midtables[5])
