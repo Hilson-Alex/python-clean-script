@@ -3,7 +3,6 @@ from const import FIELDS, SAVE_NAMES, get_archive_names
 import os, shutil, sys
 from cleaner import aggregate, sidra_clean, divide_income
 
-# res_path = sys.argv[1]
 res_path = 'resources/'
 if (len(sys.argv) > 1 ):
     res_path = sys.argv[1]
@@ -39,10 +38,12 @@ for uf in ufs:
     for arch, field, save_name in zip(archs, FIELDS, SAVE_NAMES):
         data = pd.read_csv(dirty_uf_path + arch, delimiter=';', encoding='ISO 8859-1')
         data = data.filter(items=field)
-        data = data.replace('X', '')
+        data = data.replace('X', 0)
         data.to_csv(dirty_uf_path + save_name, index=False)
 
     midtables = [pd.read_csv(dirty_uf_path + table) for table in SAVE_NAMES]
+
+    print(midtables[1])
 
     # composição de campos e mescla de tabelas
     midtables[1].loc[:,'qtd_dom_coletivo'] = [tot - priv for tot, priv in zip(midtables[1]['V001'], midtables[1]['V002'])]
